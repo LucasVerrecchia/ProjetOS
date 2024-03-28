@@ -28,7 +28,10 @@
     <form action="" method="post">
         <h1>Formatage de données</h1>
         <label for="data">Entrez les données (séparées par des virgules) :</label><br>
-        <textarea id="data" name="data" rows="4" cols="50"></textarea><br>
+        <textarea id="data" name="data" rows="4" cols="50"><?php if (isset($_POST['data'])) {
+            echo htmlentities($_POST['data']);
+        } ?></textarea><br>
+
 
         <input type="radio" id="format" name="format_type" value="table">
         <label for="format_table">Format tableau</label><br>
@@ -36,7 +39,7 @@
         <input type="radio" id="format" name="format_type" value="list">
         <label for="format_list">Format liste</label><br>
 
-        <input type="submit" name="submit" value="Format">
+        <input type="submit" name="submit" value="VROUM VROUM !">
     </form>
 
     <?php

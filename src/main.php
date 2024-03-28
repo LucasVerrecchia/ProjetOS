@@ -63,7 +63,7 @@
             }
 
             if ($format_type === "list") {
-                // Affichage des données comme une liste
+                // Affichage des données comme une liste à puce
                 echo "<ul>";
                 foreach ($donnees as $donnee) {
                     echo "<li>$donnee</li>";

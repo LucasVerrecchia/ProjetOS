@@ -1,0 +1,1 @@
+Ceci est le document à l'attention des contributeurs du projet.

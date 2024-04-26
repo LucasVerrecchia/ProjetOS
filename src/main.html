@@ -20,6 +20,16 @@
         <label for="format_list">Format liste</label><br>
 
         <input type="submit" value="Format">
+        <input type="button" value="Réinitialiser" onclick="resetForm()">
+
+        <script>
+            function resetForm() {
+                document.getElementById("data").value = "";
+                document.getElementById("format_table").checked = false;
+                document.getElementById("format_list").checked = false;
+            }
+        </script>
+
     </form>
 </body>
 
